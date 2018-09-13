@@ -6,9 +6,8 @@
     {% include "assets/css/inline.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
- 
+ <script src="js/jquery.min.js"></script>
   {% set js %}
-    {% include "assets/js/jquery.min.js" %}
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
