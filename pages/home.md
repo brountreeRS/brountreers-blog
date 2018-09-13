@@ -34,14 +34,16 @@ tags:
 
 <h2>About</h2>
 
+<div class="profile-pic">
+
 ![brian rountree](/static/img/btr-head-shot-sliced.png)
+
+</div>
 
 <h2 class="title">My Story</h2>
 
 <p>Experienced software executive leading multiple teams building applications using cutting edge web technologies. Experience building some of the largest consumer web properties in the world.</p>
 
 <p>Highly skilled and experienced front end and API layer engineer with a proven track record of building and launching new products as well as cleaning up and scaling existing products.</p>
-
-
 
 </section>
