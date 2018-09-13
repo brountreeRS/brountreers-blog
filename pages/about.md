@@ -6,74 +6,39 @@ navtitle: About
 tags:
   - nav
 ---
-
 <section class="strips">
-<article class="strips__strip">
-<div class="strip__content">
-<h1 class="strip__title" data-name="Lorem">Awesome</h1>
-<div class="strip__inner-text">
-<h2>Ettrics</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
-</div>
-</div>
-</article>
 
 <article class="strips__strip">
+
 <div class="strip__content">
-<h1 class="strip__title" data-name="Ipsum">Words</h1>
+
+<h1 class="strip__title" data-name="Lorem">OBJECTIVE</h1>
+
 <div class="strip__inner-text">
-<h2>Ettrics</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
-</div>
-</div>
-</article>
 
-<article class="strips__strip">
-<div class="strip__content">
-<h1 class="strip__title" data-name="Dolor">Go</h1>
-<div class="strip__inner-text">
-<h2>Ettrics</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
-</div>
-</div>
-</article>
-
-<article class="strips__strip">
-<div class="strip__content">
-<h1 class="strip__title" data-name="Sit">Inside</h1>
-<div class="strip__inner-text">
-<h2>Ettrics</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
-</div>
-</div>
-</article>
-
-<article class="strips__strip">
-<div class="strip__content">
-<h1 class="strip__title" data-name="Amet">Here</h1>
-<div class="strip__inner-text">
-<h2>Ettrics</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
-</div>
-</div>
-</article>
-
-<p class="fa fa-close strip__close">close</p>
-</section>
-
-
-# MY OBJECTIVES
+<h2>OBJECTIVE</h2>
 
 Leading teams that drive impactful top level objectives forward.
 
 Hiring, mentoring, and developing individual contributors and the next generation of software development managers.
 
-## SKILLS
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Ipsum">Skills</h1>
+
+<div class="strip__inner-text">
+
+SKILLS
 
 * Leadership
 * Agile Development
@@ -82,7 +47,23 @@ Hiring, mentoring, and developing individual contributors and the next generatio
 * SW Development
 * Scaling & Quality
 
-## LANGUAGES
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Dolor">LANGUAGES</h1>
+
+<div class="strip__inner-text">
+
+<h2>LANGUAGES</h2>
 
 * HTML
 * CSS 
@@ -91,7 +72,23 @@ Hiring, mentoring, and developing individual contributors and the next generatio
 * PHP
 * Go
 
-## INTERESTS
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Sit">INTERESTS</h1>
+
+<div class="strip__inner-text">
+
+<h2>INTERESTS</h2>
 
 * Community Service
 * Molecular Gastronomy 
@@ -105,10 +102,34 @@ Hiring, mentoring, and developing individual contributors and the next generatio
 * Making Ginger Beer
 * Data Visualization
 
-#### Management frameworks
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
 
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+</div>
 
-##### Regulatory convergence
+</div>
 
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Amet">Here</h1>
+
+<div class="strip__inner-text">
+
+<h2>Ettrics</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+
+<p>[twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<i class="fa fa-close strip__close">close</i>
+
+</section>
