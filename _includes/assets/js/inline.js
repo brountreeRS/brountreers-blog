@@ -53,3 +53,22 @@ var Expand = (function() {
   }());
 
 Expand.init();
+
+
+var Cubist = (function() {
+  var cube = $('.cube');
+
+    var init = function() {
+      cube.addClass('anim');
+    };
+
+    return {
+      init: init
+    };
+
+  }());
+
+Cubist.init();
+
+
+

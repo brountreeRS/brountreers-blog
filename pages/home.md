@@ -17,7 +17,7 @@ tags:
 <div class="cube-face back green"></div>
 <div class="cube-face front green"></div>
 </div>
-<div class="cube _2 w-hidden-tiny">
+<div class="cube _2">
 <div class="cube-face bottom red"></div>
 <div class="cube-face top red"></div>
 <div class="cube-face right red"></div>
@@ -33,7 +33,7 @@ tags:
 <div class="cube-face back blue"></div>
 <div class="cube-face front blue"></div>
 </div>
-<div class="cube _4 w-hidden-tiny">
+<div class="cube _4">
 <div class="cube-face bottom orange"></div>
 <div class="cube-face top orange"></div>
 <div class="cube-face right orange"></div>
@@ -41,8 +41,8 @@ tags:
 <div class="cube-face back orange"></div>
 <div class="cube-face front orange"></div>
 </div>
-<h1 class="cover-title w-hidden-tiny">brian rountree</h1>
-<h1 class="cover-title w-hidden-main w-hidden-medium w-hidden-small">the reformed coder</h1>
+<h1 class="cover-title">brian rountree</h1>
+<h1 class="cover-title w-hidden-small">the reformed coder</h1>
 <div class="cover-subtitle">
 building lots of things.
 </div>
@@ -50,8 +50,7 @@ building lots of things.
 <a target="_blank" href="https://webflow.com/dashboard/signup" class="button--cta w-button">contact</a>
 <a href="#intro" class="button--cta secondary w-button">resume</a>
 <a href="#intro" class="go-down-link w-inline-block" style="">
-<img src="https://uploads-ssl.webflow.com/566fb9dc1b4525b47c0c2505/592ff5b9723a917fb93de6ca_arrow-down.svg"
-    width="40">
+<img src="https://uploads-ssl.webflow.com/566fb9dc1b4525b47c0c2505/592ff5b9723a917fb93de6ca_arrow-down.svg" width="40">
 </a>
 <div class="cover-cta-learnmore">
 or <a href="#">Learn More</a>.

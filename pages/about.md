@@ -7,38 +7,25 @@ tags:
   - nav
 ---
 <section class="strips">
-
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Lorem">OBJECTIVE</h1>
-
 <div class="strip__inner-text">
 
-<h2>OBJECTIVE</h2>
+## OBJECTIVE
 
 Leading teams that drive impactful top level objectives forward.
-
 Hiring, mentoring, and developing individual contributors and the next generation of software development managers.
-
-<p>[twitter](https://twitter.com/pixelarchitect)</p>
-
+[twitter](https://twitter.com/pixelarchitect)
 </div>
-
 </div>
-
 </article>
-
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Ipsum">Skills</h1>
-
 <div class="strip__inner-text">
 
-SKILLS
+## SKILLS
 
 * Leadership
 * Agile Development
@@ -47,23 +34,17 @@ SKILLS
 * SW Development
 * Scaling & Quality
 
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+[twitter](https://twitter.com/pixelarchitect)
 
 </div>
-
 </div>
-
 </article>
-
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Dolor">LANGUAGES</h1>
-
 <div class="strip__inner-text">
 
-<h2>LANGUAGES</h2>
+## LANGUAGES
 
 * HTML
 * CSS 
@@ -72,23 +53,17 @@ SKILLS
 * PHP
 * Go
 
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+[twitter](https://twitter.com/pixelarchitect)
 
 </div>
-
 </div>
-
 </article>
-
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Sit">INTERESTS</h1>
-
 <div class="strip__inner-text">
 
-<h2>INTERESTS</h2>
+## INTERESTS
 
 * Community Service
 * Molecular Gastronomy 
@@ -102,7 +77,7 @@ SKILLS
 * Making Ginger Beer
 * Data Visualization
 
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+[twitter](https://twitter.com/pixelarchitect)
 
 </div>
 
@@ -118,11 +93,11 @@ SKILLS
 
 <div class="strip__inner-text">
 
-<h2>Ettrics</h2>
+## Ettrics
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!
 
-<p>[twitter](https://twitter.com/pixelarchitect)</p>
+[twitter](https://twitter.com/pixelarchitect)
 
 </div>
 
