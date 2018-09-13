@@ -4,3 +4,8 @@
     View the <a href="{{ pkg.repository.url }}">Github repo</a>.
   </small>
 </footer>
+
+  {% set js %}
+    {% include "assets/js/inline.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
