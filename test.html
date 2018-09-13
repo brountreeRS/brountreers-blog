@@ -1,59 +1,804 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+<link href="https://fonts.googleapis.com/css?family=Carter+One|Codystar|Fredericka+the+Great|Modak" rel="stylesheet">
 
-<head></head>
+    <style>
+        :root {
+            --orange: #FF9F1C;
+            --red: #E71D36;
+            --blue: #2EC4B6;
+            --paleblue: #80A1C1;
+            --green: #3D7A3B;
+            --cream: #F6D8AE;
+            --darkgrey: #252323;
+            --dark: #111111;
+            --light: #ACBDBA;
+            --boxborder: 6px;
+            --ballborder: 12px;
+        }
+
+        html {
+            font-size: 0.8em;
+            color: var(--dark);
+            background-color: var(--darkgrey);
+            text-align: center;
+        }
+
+        a {
+            color: var(--dark);
+        }
+
+        svg:hover {
+            background-color: var(--light);
+        }
+
+        h3:hover {
+            background-color: var(--light);
+        }
+
+        li img:hover {
+            border-color: var(--light);
+        }
+
+        canvas {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 75px;
+        }
+
+        .anarchy {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            border-radius: 100%;
+            border: var(--ballborder) solid var(--red);
+        }
+
+        .photo img {
+            width: 120px;
+            height: 120px;
+            border: var(--ballborder) solid var(--orange);
+        }
+
+        #intro {
+            background-color: var(--orange);
+            font-size: 18px;
+            width: 180px;
+            padding: 10px;
+            font-family: 'Carter One', cursive;
+            font-size: 22px;
+            border: var(--boxborder) solid var(--dark);
+        }
+
+        h1 {
+            width: 320px;
+            height: 140px;
+            padding-top: 10px;
+            font-family: 'Modak', cursive;
+            font-size: 70px;
+            background-color: var(--orange);
+            border: var(--boxborder) solid var(--dark);
+        }
+
+        h2 {
+            width: 150px;
+            height: 100px;
+            padding-top: 10px;
+            font-family: 'Modak', cursive;
+            font-size: 50px;
+            background-color: var(--orange);
+            border: var(--boxborder) solid var(--dark);
+        }
+
+        h3 {
+            width: 200px;
+            padding-top: 10px;
+            font-family: 'Modak', cursive;
+            font-size: 40px;
+            background-color: var(--blue);
+            border: var(--boxborder) solid var(--dark);
+        }
+
+        .smaller {
+            width: 240px;
+        }
+
+        svg {
+            fill: var(--red);
+            background-color: var(--dark);
+            display: block;
+            border-radius: 100%;
+        }
+
+        li>div {
+            background-color: var(--green);
+            width: 180px;
+            padding: 10px;
+            font-family: 'Carter One', cursive;
+            font-size: 14px;
+            border: var(--boxborder) solid var(--dark);
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+</head>
 
 <body>
-    <section class="coversection">
-        <div class="covercontainer w-container">
-            <div class="cube _1">
-                <div class="cube-face bottom green"></div>
-                <div class="cube-face top green"></div>
-                <div class="cube-face right green"></div>
-                <div class="cube-face left green"></div>
-                <div class="cube-face back green"></div>
-                <div class="cube-face front green"></div>
+
+
+
+
+    <h1 class="anarchy block prio1">Andy Barefoot</h1>
+    <h2 class="anarchy block prio1">Web Stuff</h2>
+
+    <p id="intro" class="anarchy block prio1">Articles, code experiments and other non-work things.</p>
+
+    <div class="anarchy ball photo prio1"><img alt="Andy Barefoot" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/twitterimg.jpg"
+            title="Andy Barefoot" /></div>
+
+    <ul id="social">
+        <li class="anarchy ball prio1"><a href="https://www.linkedin.com/in/andybarefoot/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+                    <path d="M42.73 34.95l0 7.74 -4.48 0 0-7.35c0-0.83 0.19-3.35-2.48-3.35 -2.67 0-2.5 3.33-2.5 3.33l0 7.37 -4.43 0 0-14.28 4.27 0 0 2.02c1.15-1.87 3.31-2.94 6.6-2.02 3.29 0.92 3.02 6.54 3.02 6.54Zm-18.89-8.48c-1.42 0-2.58-1.15-2.58-2.58 0-1.42 1.16-2.58 2.58-2.58 1.42 0 2.58 1.16 2.58 2.58 0 1.42-1.15 2.58-2.58 2.58Zm2.21 16.23l-4.45 0 0-14.28 4.46 0 0 14.28Zm37.95-42.69l-64 0 0 64 64 0 0-64Z" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="https://codepen.io/andybarefoot/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 474 474" version="1.1" xml:space="preserve">
+                    <path d="M136.33 219.13l0 35.03 26.19-17.51 -26.19-17.51Z" />
+                    <path d="M226.72 193.7l0-48.82 -82 54.67 36.63 24.51 45.37-30.35Z" />
+                    <path d="M329.66 199.55l-82-54.66 0 48.82 45.38 30.35 36.63-24.5Z" />
+                    <path d="M144.71 273.74l82 54.67 0-48.82 -45.37-30.35 -36.63 24.5Z" />
+                    <path d="M247.65 279.59l0 48.82 82-54.66 -36.63-24.5 -45.38 30.35Z" />
+                    <path d="M237.18 211.88l-37.02 24.76 37.02 24.76 37.02-24.76 -37.02-24.76Z" />
+                    <path d="M338.03 254.16l0-35.03 -26.18 17.52 26.18 17.52Z" />
+                    <path d="M358.96 273.75c0 0.46-0.03 0.92-0.09 1.37 -0.02 0.15-0.06 0.3-0.08 0.45 -0.05 0.3-0.11 0.59-0.18 0.88 -0.04 0.17-0.11 0.34-0.16 0.51 -0.08 0.26-0.17 0.51-0.27 0.77 -0.07 0.17-0.16 0.34-0.23 0.51 -0.11 0.24-0.23 0.47-0.36 0.7 -0.09 0.16-0.2 0.32-0.3 0.48 -0.14 0.22-0.28 0.43-0.44 0.64 -0.12 0.16-0.23 0.31-0.36 0.46 -0.16 0.19-0.34 0.38-0.52 0.56 -0.14 0.14-0.27 0.28-0.42 0.41 -0.19 0.17-0.39 0.34-0.6 0.5 -0.15 0.12-0.31 0.24-0.47 0.36 -0.06 0.04-0.11 0.09-0.17 0.13l-111.31 74.21c-1.76 1.17-3.78 1.76-5.81 1.76 -2.02 0-4.05-0.59-5.8-1.76l-111.32-74.21c-0.06-0.04-0.11-0.09-0.17-0.13 -0.16-0.11-0.32-0.24-0.47-0.36 -0.2-0.16-0.4-0.33-0.59-0.5 -0.14-0.13-0.28-0.27-0.42-0.41 -0.18-0.18-0.35-0.37-0.52-0.56 -0.12-0.15-0.24-0.29-0.36-0.45 -0.15-0.2-0.3-0.42-0.44-0.63 -0.11-0.16-0.2-0.32-0.3-0.48 -0.13-0.23-0.24-0.46-0.35-0.7 -0.08-0.17-0.16-0.33-0.23-0.5 -0.1-0.26-0.19-0.51-0.27-0.77 -0.06-0.17-0.11-0.33-0.16-0.51 -0.08-0.29-0.13-0.58-0.18-0.88 -0.02-0.15-0.06-0.3-0.08-0.45 -0.06-0.45-0.1-0.91-0.1-1.37l0-74.21c0-0.46 0.04-0.92 0.1-1.36 0.02-0.15 0.06-0.3 0.08-0.45 0.06-0.29 0.11-0.59 0.18-0.88 0.05-0.17 0.11-0.34 0.16-0.51 0.08-0.26 0.17-0.51 0.27-0.76 0.07-0.17 0.15-0.34 0.23-0.51 0.11-0.24 0.23-0.47 0.36-0.69 0.1-0.17 0.2-0.33 0.3-0.49 0.14-0.22 0.28-0.43 0.44-0.63 0.11-0.15 0.24-0.31 0.36-0.45 0.17-0.19 0.34-0.38 0.52-0.56 0.14-0.14 0.28-0.28 0.42-0.41 0.19-0.17 0.39-0.34 0.59-0.5 0.15-0.12 0.31-0.24 0.48-0.36 0.06-0.04 0.11-0.09 0.17-0.13l111.32-74.21c3.52-2.35 8.09-2.35 11.61 0l111.31 74.21c0.06 0.04 0.12 0.09 0.18 0.13 0.16 0.12 0.32 0.24 0.47 0.36 0.21 0.16 0.41 0.33 0.6 0.5 0.14 0.13 0.28 0.27 0.42 0.41 0.18 0.18 0.36 0.37 0.52 0.56 0.13 0.15 0.25 0.3 0.36 0.45 0.16 0.21 0.3 0.42 0.44 0.63 0.1 0.16 0.21 0.32 0.3 0.49 0.13 0.22 0.24 0.46 0.36 0.69 0.08 0.17 0.16 0.34 0.23 0.51 0.1 0.25 0.18 0.51 0.27 0.76 0.06 0.17 0.12 0.33 0.16 0.51 0.08 0.29 0.13 0.58 0.18 0.88 0.03 0.15 0.06 0.3 0.08 0.45 0.06 0.45 0.09 0.9 0.09 1.37l0 74.21Zm-358.96-273.75l0 473.36 473.31 0 0-473.36" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="https://medium.com/@andybarefoot/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+                    <path d="M22.88 37.49l0.88 0c0 0 0.83-0.06 0.89-0.72l0-9.61c0 0-0.28-0.61-1.1-0.66l-0.66 0 0-2.1 7.07 0 2.43 8.62 2.26-8.62 7.4 0 0 2.43 -1.11 0 -0.44 0.44 0 9.44c0 0 0.22 0.72 0.66 0.72l0.88 0 0 2.15 -6.79 0 0-2.1 1.27 0 0-9.89 -3.64 11.99 -2.43 0 -3.15-11.76 0 9.72 1.27 0 0 2.04 -5.69 0 0-2.1Zm-22.88 26.51l64 0 0-64 -64 0 0 64Z" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="https://github.com/andybarefoot" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+                    <path d="M36.18 45.85c-0.68-0.2-0.67-0.8-0.67-0.8 0 0 0.05-3.12 0.05-4.21 0-1.09-0.94-2.34-0.94-2.34 5.51-0.44 6.4-4.06 6.4-6.65 0-2.6-1.48-4-1.48-4 0.52-2.21-0.1-3.64-0.1-3.64 -2.52 0.29-3.77 1.53-3.77 1.53 0 0-1.64-0.6-3.72-0.6 -2.08 0-3.43 0.57-3.43 0.57 -1.98-1.71-3.87-1.48-3.87-1.48 -0.62 1.77-0.04 3.69-0.04 3.69 -1.56 1.6-1.52 4.25-1.52 4.25 0.23 6.28 6.36 6.38 6.36 6.38 -0.93 0.82-0.74 1.99-0.74 1.99 -0.1 0.02-0.25 0.12-0.62 0.29 -0.37 0.18-1.15 0.04-1.15 0.04 -1.68 0-2.16-1.21-2.52-1.64 -0.35-0.43-0.68-0.82-1.11-1.07 -0.43-0.25-1.68-0.51-1.56 0.08 0.12 0.59 1.17 0.29 1.83 1.91 0.66 1.62 1.29 2.11 2.16 2.44 0.88 0.33 2.79 0.04 2.79 0.04l0 2.81c-0.17 0.41-0.64 0.41-0.64 0.41l-0.02 0.03c-5.8-1.77-10.03-7.17-10.03-13.55 0-7.82 6.35-14.17 14.17-14.17 7.83 0 14.17 6.34 14.17 14.17 0 6.37-4.2 11.76-9.99 13.54Zm27.82-45.85l-64 0 0 64 64 0 0-64Z" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="http://twitter.com/andybarefoot" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+                    <path d="M43.56 26.06c0 0 0.79 7.38-5.55 13.47-6.34 6.1-16.77 4.83-20.53 1.64 0 0 5.11 0.57 8.71-2.49 0 0-4.25-0.08-5.48-4.05 0 0 2.13 0.16 2.5-0.24 0 0-4.58-1.1-4.62-5.89 0 0 1.39 0.7 2.66 0.74 0 0-4.42-3.19-1.74-7.96 0 0 4.46 5.91 12.21 6.32 0 0-1.05-3.49 2.17-6.16 3.22-2.67 7.2-0.41 7.96 0.6 0 0 2.27-0.35 3.85-1.42 0 0-0.52 2.04-2.43 3.27 0 0 2.24-0.3 3.27-0.9 0 0-1.09 1.75-2.97 3.08Zm20.44-26.06l-64 0 0 64 64 0 0-64Z" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="http://instagram.com/andybarefoot" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+                    <path d="M32 37.03c2.8 0 5.07-2.27 5.07-5.07 0-0.84-0.21-1.64-0.57-2.34 -0.1-0.2-0.22-0.39-0.35-0.58 0 0-0.01-0.01-0.01-0.01 -0.09-0.13-0.19-0.26-0.3-0.38 -0.01-0.01-0.01-0.02-0.02-0.02 -0.1-0.12-0.21-0.23-0.32-0.33 -0.01-0.01-0.02-0.02-0.03-0.03 -0.03-0.03-0.07-0.06-0.1-0.09 -0.01-0.01-0.03-0.02-0.04-0.04 -0.06-0.05-0.12-0.11-0.19-0.16 -0.02-0.01-0.04-0.03-0.05-0.04 -0.03-0.03-0.07-0.05-0.1-0.07 -0.02-0.02-0.05-0.03-0.07-0.05 -0.04-0.03-0.08-0.06-0.13-0.09 -0.04-0.03-0.08-0.05-0.12-0.08 -0.03-0.02-0.06-0.04-0.09-0.05 -0.03-0.02-0.06-0.04-0.09-0.05 -0.03-0.02-0.06-0.03-0.09-0.05 -0.06-0.03-0.11-0.06-0.17-0.09 -0.02-0.01-0.05-0.02-0.07-0.03 -0.04-0.02-0.08-0.04-0.13-0.06 -0.03-0.01-0.05-0.02-0.08-0.04 -0.05-0.02-0.1-0.04-0.16-0.06 -0.02-0.01-0.04-0.02-0.06-0.02 -0.06-0.02-0.12-0.04-0.18-0.06 -0.02-0.01-0.05-0.01-0.07-0.02 -0.05-0.02-0.11-0.03-0.16-0.04 -0.02 0-0.04-0.01-0.05-0.01 -0.07-0.02-0.14-0.03-0.21-0.05 -0.02 0-0.04-0.01-0.06-0.01 -0.06-0.01-0.12-0.02-0.17-0.03 -0.02 0-0.04-0.01-0.06-0.01 -0.07-0.01-0.15-0.02-0.22-0.03 -0.01 0-0.03 0-0.04 0 -0.06-0.01-0.13-0.01-0.19-0.01 -0.02 0-0.04 0-0.06 0 -0.08 0-0.16 0-0.23 0 -0.08 0-0.16 0-0.23 0.01 -0.02 0-0.04 0-0.06 0 -0.06 0-0.13 0.01-0.19 0.02 -0.01 0-0.03 0-0.04 0 -0.07 0.01-0.15 0.02-0.22 0.03 -0.02 0-0.04 0.01-0.06 0.01 -0.06 0.01-0.12 0.02-0.17 0.03 -0.02 0-0.04 0.01-0.06 0.01 -0.07 0.02-0.14 0.03-0.21 0.05 -0.02 0.01-0.04 0.01-0.05 0.02 -0.05 0.01-0.11 0.03-0.16 0.05 -0.02 0.01-0.05 0.02-0.07 0.02 -0.06 0.02-0.12 0.04-0.18 0.06 -0.02 0.01-0.04 0.02-0.06 0.02 -0.05 0.02-0.1 0.04-0.16 0.06 -0.03 0.01-0.05 0.02-0.08 0.04 -0.04 0.02-0.08 0.04-0.12 0.06 -0.03 0.01-0.05 0.02-0.07 0.03 -0.06 0.03-0.11 0.06-0.17 0.09 -0.03 0.02-0.06 0.03-0.09 0.05 -0.03 0.02-0.06 0.04-0.09 0.05 -0.03 0.02-0.06 0.04-0.09 0.06 -0.04 0.03-0.08 0.05-0.12 0.08 -0.04 0.03-0.08 0.06-0.13 0.09 -0.02 0.02-0.05 0.03-0.07 0.05 -0.04 0.02-0.07 0.05-0.1 0.08 -0.02 0.01-0.04 0.03-0.05 0.04 -0.06 0.05-0.13 0.1-0.19 0.16 -0.01 0.01-0.03 0.02-0.04 0.04 -0.04 0.03-0.07 0.06-0.11 0.1 -0.01 0.01-0.02 0.02-0.03 0.03 -0.11 0.11-0.22 0.22-0.32 0.34 -0.01 0.01-0.01 0.02-0.02 0.02 -0.1 0.12-0.2 0.25-0.3 0.38 0 0 0 0.01-0.01 0.01 -0.13 0.18-0.25 0.38-0.35 0.58 -0.36 0.7-0.57 1.5-0.57 2.34 0 2.8 2.27 5.07 5.07 5.07Z" />
+                    <path d="M39.72 31.96c0 4.26-3.45 7.72-7.72 7.72 -4.26 0-7.72-3.45-7.72-7.72 0-0.81 0.13-1.6 0.36-2.34l-2.17 0 0 10.32c0 0.88 0.71 1.59 1.59 1.59l15.87 0c0.88 0 1.59-0.71 1.59-1.59l0-10.32 -2.17 0c0.23 0.74 0.36 1.52 0.36 2.34Z" />
+                    <path d="M44.39 41.73c0 1.47-1.19 2.67-2.66 2.67l-19.45 0c-1.47 0-2.66-1.19-2.66-2.66l0-19.45c0-1.47 1.19-2.66 2.67-2.66l19.45 0c1.47 0 2.67 1.19 2.67 2.66l0 19.45Zm19.61-41.73l-64 0 0 64 64 0 0-64Z" />
+                    <path d="M40.32 22.39l-2 0c-0.69 0-1.25 0.56-1.25 1.25l0 2c0 0.69 0.56 1.25 1.25 1.25l2 0c0.69 0 1.25-0.56 1.25-1.25l0-2c0-0.69-0.56-1.25-1.25-1.25Z" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="http://www.facebook.com/profile.php?id=729980577" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 64 64" version="1.1"
+                    xml:space="preserve">
+                    <path d="M39.39 22.51l-2.85 0c0 0-1.2-0.02-1.76 0.62 -0.56 0.65-0.5 1.57-0.5 1.8l0 3.26 4.95 0 -0.64 5.04 -4.34 0 0 12.99 -5.25 0 0-13.02 -4.39 0 0-5.02 4.38 0 0-4.06c0 0-0.18-2.65 1.83-4.66 2.01-2.01 4.72-1.82 8.58-1.49l0 4.53Zm24.61-22.51l-64 0 0 64 64 0 0-64Z" /></svg></a></li>
+        <li class="anarchy ball prio1"><a href="mailto:andy@andybarefoot.com"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="100" height="100" viewBox="0 0 64 64" version="1.1" xml:space="preserve">
+                    <path d="M46.53 40.88l-10.69-7.73 10.69-9.02 0 16.75Zm-28.4 0.65l10.64-8c0 0 1.76 1.9 3.33 1.9 1.57 0 3.19-1.9 3.19-1.9l10.32 8 -27.48 0Zm-0.65-17.72l10.59 9.16 -10.59 7.91 0-17.07Zm1.67-2.34l25.72 0c1.39 0 1.39 0.74 1.39 0.74l-12.72 9.85c-0.37 0.37-0.78 0.46-1.62 0.46 -0.83 0-1.48-0.69-1.48-0.69l-12.49-9.85c0.39-0.39 1.2-0.51 1.2-0.51Zm44.86-21.47l-64 0 0 64 64 0 0-64Z" /></svg></a></li>
+    </ul>
+    <ul class="collection" id="css">
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/ypPgod" target="stackedCubes">
+                <h3 class="anarchy block prio2">Stacked Cubes</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/ypPgod" target="stackedCubes"><img class="anarchy ball prio2"
+                    src="https://www.andybarefoot.com/images/thumbs/stackedCubes-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A <a href="https://codepen.io/andybarefoot/pen/ypPgod" target="stackedCubes">CodePen</a>
+                    experimenting with displaying many rows of content in an innovative way.</p>
+                <p>Uses CSS Grid with transforms and ::before and ::after selectors to add a 3D effect to a list of
+                    images.</p>
+
             </div>
-            <div class="cube _2 w-hidden-tiny">
-                <div class="cube-face bottom red"></div>
-                <div class="cube-face top red"></div>
-                <div class="cube-face right red"></div>
-                <div class="cube-face left red"></div>
-                <div class="cube-face back red"></div>
-                <div class="cube-face front red"></div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/ypXYVJ" target="horizScroll">
+                <h3 class="anarchy block smaller prio2">Horizontal grid</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/ypXYVJ" target="horizScroll"><img class="anarchy ball prio2"
+                    src="https://www.andybarefoot.com/images/thumbs/horizGrid-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A <a href="https://codepen.io/andybarefoot/pen/ypXYVJ" target="horizScroll">horizontal brick layout</a>
+                    using CSS Grid and vertical-lr writing mode to maintain a up->down then left->right dense packing.</p>
+                <p>Not a layout that would be recommended for desktop but works nicely as a horizontally scrolling
+                    mobile/tablet layout.</p>
             </div>
-            <div class="cube _3">
-                <div class="cube-face bottom blue"></div>
-                <div class="cube-face top blue"></div>
-                <div class="cube-face right blue"></div>
-                <div class="cube-face left blue"></div>
-                <div class="cube-face back blue"></div>
-                <div class="cube-face front blue"></div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/MERBPx" target="isoGrid">
+                <h3 class="anarchy block prio2">Isometric Layered Grid</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/MERBPx" target="isoGrid"><img class="anarchy ball prio2" src="https://www.andybarefoot.com/images/thumbs/isoGrid-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>An experiment in overlaying CSS Grids to create an <a href="https://codepen.io/andybarefoot/pen/MERBPx"
+                        target="isoGrid">isometric layout</a>. Three grids are skewed and rotated to provide an
+                    isometric framework</p>
+                <p>Content is positioned on the 3 grids to give an overlapping 3D effect.</p>
             </div>
-            <div class="cube _4 w-hidden-tiny">
-                <div class="cube-face bottom orange"></div>
-                <div class="cube-face top orange"></div>
-                <div class="cube-face right orange"></div>
-                <div class="cube-face left orange"></div>
-                <div class="cube-face back orange"></div>
-                <div class="cube-face front orange"></div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/wrXvLj" target="gridMask">
+                <h3 class="anarchy block prio2">CSS Grid as a mask</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/wrXvLj" target="gridMask"><img class="anarchy ball prio2" src="https://www.andybarefoot.com/images/thumbs/mask-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A CodePen that uses <a href="https://codepen.io/andybarefoot/pen/wrXvLj" target="gridMask">CSS Grid
+                        as a mask</a> to recreate a design similar to <a href="https://media-s3-us-east-1.ceros.com/ceros-marketing/images/2016/10/24/ddad31747373bd0169a985ebbd60cad2/poster-full.jpg"
+                        target="poster">this poster</a>.</p>
+                <p>The grid contains many "filler" elements that only exist to obscure the background image from view.</p>
             </div>
-            <h1 class="cover-title w-hidden-tiny">brian rountree</h1>
-            <h1 class="cover-title w-hidden-main w-hidden-medium w-hidden-small">the reformed coder</h1>
-            <div class="cover-subtitle">
-                building lots of things.
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/GMyREX" target="perspect">
+                <h3 class="anarchy block smaller prio2">Responsive Perspective layout</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/GMyREX" target="perspect"><img class="anarchy ball prio2" src="https://www.andybarefoot.com/images/thumbs/perspect-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A <a href="https://codepen.io/andybarefoot/pen/GMyREX" target="perspect">CSS Grid layout</a> using
+                    perspective and Y-rotation to give a 3D effect. </p>
+                <p>JavaScript is used to make sure the item styling alternates correctly as the number of items on each
+                    row changes.</p>
             </div>
-            <div class="cover-cta">
-                <a target="_blank" href="https://webflow.com/dashboard/signup" class="button--cta w-button">contact</a>
-                <a href="#intro" class="button--cta secondary w-button">resume</a>
-                <a href="#intro" class="go-down-link w-inline-block" style="">
-                    <img src="https://uploads-ssl.webflow.com/566fb9dc1b4525b47c0c2505/592ff5b9723a917fb93de6ca_arrow-down.svg"
-                        width="40">
-                </a>
-                <div class="cover-cta-learnmore">
-                    or <a href="#">Learn More</a>.
-                </div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/WXpKJV" target="imageZoom">
+                <h3 class="anarchy block prio2">Image Squish with CSS Grid</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/WXpKJV" target="imageZoom"><img class="anarchy ball prio2" src="https://www.andybarefoot.com/images/thumbs/squash-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A <a href="https://codepen.io/andybarefoot/pen/WXpKJV" target="imageZoom">morphing grid experiment</a>
+                    using CSS Grid to provide the grid and dynamically changing the "grid-template-columns" and
+                    "grid-template-rows" attributes based on the mouse position.</p>
+                <p>Based on a Flash experiment by Yugo Nakamura</p>
             </div>
-    </section>
+        </li>
+
+        <li>
+            <a href="https://codepen.io/andybarefoot/full/GMvygq" target="booksPoster">
+                <h3 class="anarchy block smaller prio2">Rodchenko poster layout</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/full/GMvygq" target="booksPoster"><img class="anarchy ball prio2"
+                    src="https://www.andybarefoot.com/images/thumbs/rodchenko-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A CSS Grid layout experiment on <a href="https://codepen.io/andybarefoot/full/GMvygq" target="booksPoster">CodePen</a>
+                    using CSS Grid and CSS transformations and perspective.</p>
+                <p>The layout is based on the famous 1924 poster by Alexander Rodchenko for the Gosizdat publishing
+                    house.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/full/MEbORa" target="animatedLizards">
+                <h3 class="anarchy block prio2">Animated lizard tiles</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/full/MEbORa" target="animatedLizards"><img class="anarchy ball prio2"
+                    src="https://www.andybarefoot.com/images/thumbs/lizards-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>An experiment on <a href="https://codepen.io/andybarefoot/full/MEbORa" target="animatedLizards">CodePen</a>
+                    combining CSS Grid and SVG animation using D3.js.</p>
+                <p>The tessellated lizard tiles are based on a painting by M. C. Escher.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/full/QqGBro" target="cssgridDiamonds">
+                <h3 class="anarchy block prio2">Diamond Grid layout</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/full/QqGBro" target="cssgridDiamonds"><img class="anarchy ball prio2"
+                    src="https://www.andybarefoot.com/images/thumbs/diamond-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>A CSS Grid layout on <a href="https://codepen.io/andybarefoot/full/QqGBro" target="cssgridDiamonds">CodePen</a>
+                    with a diagonal grid that fills exactly the browser window and orders the items appropriately.</p>
+                <p>The user can specify the total number of grid items and the number of items per row. JavaScript is
+                    used to resize the grid and place the items in the correct order.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/pen/zdbVMm" target="cssgridMasonry">
+                <h3 class="anarchy block prio2">Masonry layout with CSS Grid</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/pen/zdbVMm" target="cssgridMasonry"><img class="anarchy ball prio2"
+                    src="https://www.andybarefoot.com/images/thumbs/masonry-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>CSS Grid makes laying out content in a grid much easier and does a good job of Masonry style layouts
+                    as long as you are able to specify the size of each grid item in advance.</p>
+                <p>I wrote an example of how you can use a little bit of JavaScript to automatically resize the grid
+                    items to get a perfect <a href="https://codepen.io/andybarefoot/pen/zdbVMm" target="cssgridMasonry"
+                        target="cssgridMasonry">Masonry layout with CSS Grid</a>.</p>
+            </div>
+        </li>
+        <li><a href="https://www.andybarefoot.com/got/grid.html" target="gotgrid">
+                <h3 class="anarchy block prio2">Grid of Thrones</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/got/grid.html" target="gotgrid"><img class="anarchy ball prio2" src="https://www.andybarefoot.com/images/thumbs/thronesGrid-300.jpg" /></a>
+            <div class="anarchy block prio2">
+                <p>The dilligent and learned maesters at the excellent <a class="ext" href="http://gameofthrones.wikia.com/wiki/Game_of_Thrones_Wiki"
+                        target="got-wiki">Game of Thrones wiki</a> have documented everything you could ever need to
+                    know about Game of Thrones. This includes every character who has appeared in the show. From
+                    Daenerys Tagaryen to Othell Yarwyck to "Dwarf Hunter 2". If they speak a line or even if they are
+                    just an interesting corpse they will be on the site.</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="collection" id="posts">
+        <li>
+            <a href="https://medium.com/@andybarefoot/stretching-the-grid-5-fun-ways-to-use-css-grid-5931166f467f"
+                target="stretch">
+                <h3 class="anarchy block smaller prio3">Stretching the Grid - 6 fun ways to use CSS Grid</h3>
+            </a>
+            <a href="https://medium.com/@andybarefoot/stretching-the-grid-5-fun-ways-to-use-css-grid-5931166f467f"
+                target="stretch"><img class="anarchy ball prio3" src="https://www.andybarefoot.com/images/thumbs/article06-300.png" /></a>
+            <div class="anarchy block prio3">
+                <p>Having spent a few months experimenting with CSS Grid layout I had a <a href="https://codepen.io/collection/DapBxW/"
+                        target="_blank">collection of CodePens</a> that I thought were interesting and demonstrated
+                    techniques I hadn't seen elsewhere.</p>
+                <p>With this in mind I wrote a Medium post listing some of these new techniques and layouts and
+                    included links to the CodePen examples.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb" target="masonrypost">
+                <h3 class="anarchy block prio3">Masonry style layout with CSS Grid</h3>
+            </a>
+            <a href="https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb" target="masonrypost"><img
+                    class="anarchy ball prio3" src="https://www.andybarefoot.com/images/thumbs/article05-300.png" /></a>
+            <div class="anarchy block prio3">
+                <p>A commonly asked question about CSS Grid is whether it can support a Masonry-style layout. The short
+                    answer is that it can't. However it has a lot of features that make creating a Masonry-style layout
+                    easier if you use a small amount of JavaScript and are willing to accept some minor limitations.</p>
+                <p>I wrote a post on Medium explaining this approach and providing examples of various iterations of
+                    the final solution.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://codepen.io/andybarefoot/post/isometric-layout-with-css-grid" target="stretch">
+                <h3 class="anarchy block prio3">Isometric layout with CSS Grid</h3>
+            </a>
+            <a href="https://codepen.io/andybarefoot/post/isometric-layout-with-css-grid" target="stretch"><img class="anarchy ball prio3"
+                    src="https://www.andybarefoot.com/images/thumbs/article04-300.png" /></a>
+            <div class="anarchy block prio3">
+                <p>I had created an <a href="https://codepen.io/andybarefoot/pen/MERBPx" target="_blank">example</a> on
+                    CodePen of how to lay out content in an Isometric display using CSS Grid.</p>
+
+                <p>Responding to a tweet by <a href="https://twitter.com/rachsmithtweets" target="_blank">Rachel Smith</a>
+                    I wrote a CodePen post describing how I had created the isometric grid layout and how to place
+                    content within it.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://medium.com/@andybarefoot/d3-and-css-grid-with-expanding-content-3c8aaf783cb1" target="expandingpost">
+                <h3 class="anarchy block prio3">D3 and CSS Grid with expanding content</h3>
+            </a>
+            <a href="https://medium.com/@andybarefoot/d3-and-css-grid-with-expanding-content-3c8aaf783cb1" target="expandingpost"><img
+                    class="anarchy ball prio3" src="https://www.andybarefoot.com/images/thumbs/article03-300.png" /></a>
+            <div class="anarchy block prio3">
+                <p>Having started using CSS Grid I was interested in exploring its ability to lay out different size
+                    content blocks into a densely packed grid. For this I used all the characters from Game of Thrones
+                    that I had gathered for a data vis project.</p>
+                <p>I then wanted to extend the functionality so that clicking on one of the grid elements would expand
+                    it to reveal more content without the element moving position within the grid. This article
+                    explains how this was achieved using the CSS Grid layout and JavaScript.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://medium.com/@andybarefoot/making-a-map-using-d3-js-8aa3637304ee" target="mappost">
+                <h3 class="anarchy block prio3">Making a map using D3.js</h3>
+            </a>
+            <a href="https://medium.com/@andybarefoot/making-a-map-using-d3-js-8aa3637304ee" target="mappost"><img
+                    class="anarchy ball prio3" src="https://www.andybarefoot.com/images/thumbs/article02-300.png" /></a>
+            <div class="anarchy block prio3">
+                <p><a href="https://twitter.com/mbostock" target="_blank">Mike Bostock</a>'s D3.js library makes use of
+                    SVG, HTML5 and CSS standards to create interactive data visualisations for the web. He has hundreds
+                    of examples of amazing visualisations created using this library.</p>
+                <p>I had been using the library to make some data visualisations of my own and as part of this I wanted
+                    to create a simple and reusable world map template. The idea was that I would be able to use this
+                    standard map as a base for future visualisations so it should be possible to customise it very
+                    easily.</p>
+            </div>
+
+        </li>
+        <li>
+            <a href="https://medium.com/@andybarefoot/adding-instagram-photos-to-my-site-with-angularjs-a3eb2a436746"
+                target="instagrampost">
+                <h3 class="anarchy block prio3">Adding Instagram photos to my site with AngularJS</h3>
+            </a>
+            <a href="https://medium.com/@andybarefoot/adding-instagram-photos-to-my-site-with-angularjs-a3eb2a436746"
+                target="instagrampost"><img class="anarchy ball prio3" src="https://www.andybarefoot.com/images/thumbs/article01-300.png" /></a>
+            <div class="anarchy block prio3">
+                <p>An old article describing how I added my latest Instagram photos to my personal site using my own
+                    look and feel despite Instagram not really supporting this.</p>
+                <p>Article describes scraping Instagram for my most recent content, saving the images locally and then
+                    implementing a Masonry layout using AngularJS</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="collection" id="datavis">
+        <li>
+            <a href="https://www.andybarefoot.com/got/allegiances.html" target="gotmap">
+                <h3 class="anarchy block" class="anarchy block prio4">Game of Thrones Allies</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/got/allegiances.html" target="gotmap"><img class="anarchy ball prio4"
+                    src="https://www.andybarefoot.com/images/thumbs/thronesMap-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>To play the Game of Thrones you will need allies. But when those allies are Petyr Baelish, Roose
+                    Bolton or Alliser Thorne you will also need stab proof armour.</p>
+                <p>This <a href="https://www.andybarefoot.com/got/allegiances.html" target="gotmap">map</a> shows all
+                    the major houses and institutions of the Game of Thrones world with the many, many allegiances and
+                    connections to the hundreds of characters in the show.</p>
+            </div </li> <li>
+            <a href="https://www.andybarefoot.com/art/" target="metcollection">
+                <h3 class="anarchy block prio4">The Met Collection</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/art/" target="metcollection"><img class="anarchy ball prio4" src="https://www.andybarefoot.com/images/thumbs/met-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p><a class="ext" href="http://www.metmuseum.org/" target="met">The Metropolitan Museum of Art</a>
+                    recently published to GitHub the <a class="ext" href="https://github.com/metmuseum/openaccess"
+                        target="metgithub">details of 446,029 objects</a> from their collection.</p>
+            </div>
+        </li>
+        <li><a href="https://www.andybarefoot.com/football/world-champions.html" target="footballmap">
+                <h3 class="anarchy block prio4">UFWC Map</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/football/world-champions.html" target="footballmap"><img class="anarchy ball prio4"
+                    src="https://www.andybarefoot.com/images/thumbs/ufwcmap-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>Following on from my previous <a class="ext" href="/football/" target="football">UFWC data
+                        visualisation</a> I wanted to show the progress of the Unofficial World Football Championship
+                    using an <a href="https://www.andybarefoot.com/football/world-champions.html" target="footballmap">animated
+                        interactive map</a>.</p>
+                <p>The animation shows details of all 926 matches played so far as the map updates to show which teams
+                    have held or challenged for the title.</p>
+            </div>
+        </li>
+        <li><a href="https://www.andybarefoot.com/football/path.html" target="premier">
+                <h3 class="anarchy block prio4">Premier League</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/football/path.html" target="premier"><img class="anarchy ball prio4"
+                    src="https://www.andybarefoot.com/images/thumbs/premier-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>A <a href="https://www.andybarefoot.com/football/path.html" target="premier">data visualisation</a>
+                    to show the distance travelled by each Premier League footballer to get to their current club. It
+                    shows the distance from the player's birthplace and the clubs they have been at along the way both
+                    individually and totalled for each club. </p>
+                <p>See which clubs cast their nets the furthest and which rely on the largest number of journeymen.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/football/" target="football">
+                <h3 class="anarchy block prio4">UFWC</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/football/" target="football"><img class="anarchy ball prio4" src="https://www.andybarefoot.com/images/thumbs/uwc-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>The <a class="ext" href="http://www.ufwc.co.uk/" target="ufwc">Unofficial Football World
+                        Championships</a> is a project by Paul Brown that tracks the World Champions of football as if
+                    the title were decided in the same way as boxing, i.e a team remains champions until they lose a
+                    game.</p>
+                <p>My <a href="https://www.andybarefoot.com/football/" target="football">data visualisation</a> shows
+                    all of the 918 "title decider" games that have been played so far showing how the title has jumped
+                    from nation to nation and continent to continent.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/olympics/" target="olympics">
+                <h3 class="anarchy block prio4">Olympics 2016</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/olympics/" target="olympics"><img class="anarchy ball prio4" src="https://www.andybarefoot.com/images/thumbs/olympics-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>A selection of data visualisations from the <a href="https://www.andybarefoot.com/olympics/" target="olympics">2016
+                        Summer Olympics</a>.</p>
+                <p>Data was either manually collected from wikipedia or scraped in real time from the BBC medal table
+                    and then stored in MySQL and formatted to CSV or JSON files.</p>
+                <p>The visualisations were built using D3.js and JQuery using some of Mike Bostock's excellent <a class="ext"
+                        href="https://bl.ocks.org/mbostock" target="d3">examples</a> as a starting point.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/cocktails/" target="cocktails">
+                <h3 class="anarchy block prio4">Cocktail Menu</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/cocktails/" target="cocktails"><img class="anarchy ball prio4" src="https://www.andybarefoot.com/images/thumbs/cocktails-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>An exercise in using D3.js and SVG to create <a href="https://www.andybarefoot.com/cocktails/"
+                        target="cocktails">data visualisations of cocktails</a> and their ingredients.</p>
+                <p>Inspired by this <a class="ext" href="http://www.informationisbeautiful.net/visualizations/cocktails/"
+                        target="_blank">original visualisation</a> by Tatjana Dubovina & David McCandless I wanted to
+                    make an entirely dynamically generated version.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/got/" target="got">
+                <h3 class="anarchy block prio4">Valar Morghulis</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/got/" target="got"><img class="anarchy ball prio4" src="https://www.andybarefoot.com/images/thumbs/thronesTree-300.jpg" /></a>
+            <div class="anarchy block prio4">
+                <p>Fans of Game of Thrones know that Valar Morghulis (all men must die) but when over 200 named
+                    characters have already gone to meet The Seven (or The Old Gods, or The Drowned God, or The Lord of
+                    Light, or The Many-Faced God of Death, or the Great Stallion, etc...) then it gets hard to keep
+                    track of the tragedy.</p>
+                <p>Fortunately Maester Barefoot has created a comprehensive record of all these deaths, whether
+                    violent, very violent or extremely violent.</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="collection" id="mobile">
+        <li>
+            <a href="https://play.google.com/store/apps/details?id=com.GunterGames.SkiVR" target="skivr">
+                <h3 class="anarchy block prio5">Ski VR</h3>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.GunterGames.SkiVR" target="skivr"><img class="anarchy ball prio5"
+                    src="https://www.andybarefoot.com/images/thumbs/ski-300.jpg" /></a>
+            <div class="anarchy block prio5">
+                <p>Ski VR is a quick VR demo built for Google Cardboard but also playable without a headset.</p>
+                <p>Slide gracefully down the mountain between trees and alpine chalets in a Virtual Reality winter
+                    wonderland.</p>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.guntergames.com/colorhex" target="colorhex">
+                <h3 class="anarchy block prio5">Color Hex</h3>
+            </a>
+            <a href="http://www.guntergames.com/colorhex" target="colorhex"><img class="anarchy ball prio5" src="https://www.andybarefoot.com/images/thumbs/colorhex-300.jpg" /></a>
+            <div class="anarchy block prio5">
+                <p>Color Hex is a mobile puzzle game for Android and iOS built and published uing the Unity platform.</p>
+                <p>The player must try and match patterns by mixing colours together on a hexagonal grid. As the
+                    patterns get more complicated the puzzle becomes more difficult.</p>
+                <p>There are 2 play modes with a combined total of 222 levels.</p>
+            </div>
+        </li>
+        <li><a href="http://www.guntergames.com/superdice" target="superdice">
+                <h3 class="anarchy block prio5">Super Dice</h3>
+            </a>
+            <a href="http://www.guntergames.com/superdice" target="superdice"><img class="anarchy ball prio5" src="https://www.andybarefoot.com/images/thumbs/dice-300.jpg" /></a>
+            <div class="anarchy block prio5">
+                <p>My first attempt at using the <a class="ext" href="https://unity3d.com/" target="_unity">Unity</a>
+                    platform to create a mobile game was a mobile version of the dice game Farkle.</p>
+                <p>The game can be downloaded from the <a href="https://play.google.com/store/apps/details?id=com.andybarefoot.superdice"
+                        target="_blank">Google Play store</a> or played <a href="http://www.guntergames.com/superdice/play/"
+                        target="_blank">in browser</a>.</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="collection" id="web">
+        <li>
+            <a href="https://www.andybarefoot.com/politics/mpcompare/" target="mp-compare">
+                <h3 class="anarchy block smaller prio6">MP CoMParison</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/politics/mpcompare/" target="mp-compare"><img class="anarchy block prio6"
+                    src="https://www.andybarefoot.com/images/thumbs/mp-300.jpg" /></a>
+            <div class="anarchy ball prio6">
+                <p>The site <a class="ext" href="http://www.publicwhip.org.uk/" target="_whip">the Public Whip</a>
+                    aggregates the data on how MPs in the UK parliament vote. They then group this by similar votes to
+                    provide an insight into how much each MP supports a particular policy.</p>
+                <p>The site did not provide a tool to enable users to easily compare MPs and see their relative support
+                    for each issue.</p>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.allthesneakers.com/" target="sneakers">
+                <h3 class="anarchy block prio6">All The Sneakers</h3>
+            </a>
+            <a href="http://www.allthesneakers.com/" target="sneakers"><img class="anarchy ball prio6" src="https://www.andybarefoot.com/images/thumbs/sneakers-300.jpg" /></a>
+            <div class="anarchy block prio6">
+                <p>Demo search engine of sneakers collating and comparing sneakers from a number of eCommerce sites.</p>
+                <p>Regularly spiders a number of sites and compares prices where identical sneakers appear on multiple
+                    sites.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/winstagram" target="winstagram">
+                <h3 class="anarchy block smaller prio6">Winstagram</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/winstagram" target="winstagram"><img class="anarchy ball prio6" src="https://www.andybarefoot.com/images/thumbs/winst-300.jpg" /></a>
+            <div class="anarchy block prio6">
+                <p>More and more people are posting photos on their social web blogs. But most of them are not very
+                    good photographers. Or have poorly made cameras. The colours come out funny, the edges are all
+                    crackly and often some of the image is out of focus.</p>
+                <p>I have developed an app to restore these poor quality photographs: <a href="https://www.andybarefoot.com/winstagram"
+                        target="winstagram">Winstagram!</a></p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/politics/cameron.php" target="cameron">
+                <h3 class="anarchy block prio6">We can't go on like this</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/politics/cameron.php" target="cameron"><img class="anarchy ball prio6"
+                    src="https://www.andybarefoot.com/images/thumbs/cameron-300.jpg" /></a>
+            <div class="anarchy block prio6">
+                <p>Good old David Cameron. He's so suave yet so caring. he just wants the best for the country. He says
+                    so in his lovely new <a class="ext" href="http://www.flickr.com/photos/conservatives/4244583668/sizes/l/in/photostream/"
+                        target="flickr-tory">poster campaign</a> (NSFDuring lunch).</p>
+                <p>Deface David's poster with your own words with <a href="https://www.andybarefoot.com/politics/cameron.php"
+                        target="cameron">"Make your own David Cameron poster"</a>.</p>
+            </div>
+        </li>
+        <li>
+            <a href="https://www.andybarefoot.com/politics/tucker.php" target="tucker">
+                <h3 class="anarchy block prio6">Malcolm Tucker</h3>
+            </a>
+            <a href="https://www.andybarefoot.com/politics/tucker.php" target="tucker"><img class="anarchy ball prio6"
+                    src="https://www.andybarefoot.com/images/thumbs/tucker-300.jpg" /></a>
+            <div class="anarchy block prio6">
+                <p>Combines the <a href="https://www.andybarefoot.com/politics/cameron.php" target="cameron">David
+                        Cameron poster generator</a> with the foul-mouthed tirades of Malcolm Tucker, <a class="ext"
+                        href="http://www.youtube.com/watch?v=LugJd6uGJqI" target="youtube-tucker">sweary spin doctor</a>
+                    from The Thick of It.</p>
+                <p>A random choice of blue bon-mot is substituted every time you click the "Tuckerise" button so <a
+                        href="https://www.andybarefoot.com/politics/tucker.php" target="tucker">click away</a>.
+                    However, be warned. He is a very very rude man and if you don't like naughty words you probably
+                    won't like this.</p>
+            </div>
+        </li>
+    </ul>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.js"></script>
+
+    <script>
+        // module aliases
+        var Engine = Matter.Engine,
+            Render = Matter.Render,
+            World = Matter.World,
+            Body = Matter.Body,
+            Bodies = Matter.Bodies;
+
+        var worldW = window.innerWidth;
+        var worldH = window.innerHeight;
+
+
+        var engine;
+        var render;
+
+        // bodies
+        var blocks = [];
+        var walls = [];
+        var ground;
+
+        // DOM elements
+        var hBlocks = document.getElementsByClassName("anarchy");
+
+        var pageWidth = 0;
+
+        window.onload = function () {
+            pageWidth = window.innerWidth;
+        };
+
+        window.onresize = function () {
+            var newpageWidth = window.innerWidth;
+            if (newpageWidth < pageWidth) {
+                for (var i = 0; i < blocks.length; i++) {
+                    Body.setPosition(blocks[i].body, {
+                        x: newpageWidth / 2,
+                        y: window.innerHeight + 500 + (50 * i)
+                    });
+                }
+            }
+            pageWidth = newpageWidth;
+        };
+
+        function Box(x, y, w, h) {
+            var options = {
+                density: 0.00005,
+                friction: .5,
+                restitution: 0
+            }
+            this.body = Bodies.rectangle(x, y, w, h, options);
+            xVel = 10 * Math.random() - 5;
+            Body.setVelocity(this.body, {
+                x: xVel,
+                y: 0
+            });
+            World.add(engine.world, [this.body]);
+        }
+
+        function Ball(x, y, r) {
+            var options = {
+                density: 0.00005,
+                friction: .5,
+                restitution: 0
+            }
+            this.body = Bodies.circle(x, y, r, options);
+            xVel = 10 * Math.random() - 5;
+            Body.setVelocity(this.body, {
+                x: xVel,
+                y: 0
+            });
+            World.add(engine.world, [this.body]);
+        }
+
+
+        function setup() {
+            engine = Engine.create();
+            engine.world.gravity.y = -0.5;
+
+            render = Render.create({
+                element: document.body,
+                engine: engine,
+                options: {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                    wireframes: false,
+                    showAngleIndicator: true
+                }
+            });
+            Render.run(render);
+            for (var i = 0; i < hBlocks.length; i++) {
+                var startHeight = window.innerHeight;
+                if (hBlocks[i].classList.contains("prio1")) {
+                    startHeight += 500;
+                } else if (hBlocks[i].classList.contains("prio2")) {
+                    startHeight += 1500;
+                } else if (hBlocks[i].classList.contains("prio3")) {
+                    startHeight += 2500;
+                } else if (hBlocks[i].classList.contains("prio4")) {
+                    startHeight += 3500;
+                } else if (hBlocks[i].classList.contains("prio5")) {
+                    startHeight += 4500;
+                } else if (hBlocks[i].classList.contains("prio6")) {
+                    startHeight += 5500;
+                } else {
+                    startHeight += 6500;
+                }
+                if (hBlocks[i].classList.contains("ball")) {
+                    blocks.push(new Ball(window.innerWidth / 2, startHeight, hBlocks[i].offsetWidth / 2));
+                } else if (hBlocks[i].classList.contains("block")) {
+                    blocks.push(new Box(window.innerWidth / 2, startHeight, hBlocks[i].offsetWidth, hBlocks[i].offsetHeight));
+                }
+            }
+            ground = Bodies.rectangle(10000, -50, 20000, 100, {
+                isStatic: true
+            });
+            ceiling = Bodies.rectangle(10000, 40050, 20000, 100, {
+                isStatic: true
+            });
+            walls[0] = Bodies.rectangle(-50, 20000, 100, 40000, {
+                isStatic: true
+            });
+            walls[1] = Bodies.rectangle(window.innerWidth + 50, 20000, 100, 40000, {
+                isStatic: true
+            });
+        }
+
+        function draw() {
+            // for(var i=0;i<boxes.length;i++){
+            //   boxes[i].show();
+            // }
+            World.add(engine.world, [ground, ceiling, walls[0], walls[1]]);
+        }
+
+        setup();
+        draw();
+
+        (function render() {
+            Engine.update(engine, 20);
+            Body.setPosition(walls[1], {
+                x: document.body.clientWidth + 50,
+                y: 0
+            });
+            for (var i = 0; i < blocks.length; i++) {
+                var xTrans = blocks[i].body.position.x - hBlocks[i].offsetWidth / 2;
+                var yTrans = blocks[i].body.position.y - hBlocks[i].offsetHeight / 2;
+                hBlocks[i].style.transform = "translate(" + xTrans + "px, " + yTrans + "px) rotate(" + blocks[i].body
+                    .angle + "rad)";
+                hBlocks[i].style.visibility = "visible";
+            }
+            window.requestAnimationFrame(render);
+        })();
+    </script>
+
+
+
 </body>
 
 </html>
