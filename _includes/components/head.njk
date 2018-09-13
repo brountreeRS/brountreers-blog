@@ -6,10 +6,10 @@
     {% include "assets/css/inline.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
-  {# An optional javascript pipeline; outputs minified JS into <head>
+ 
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
-  #}
+  
 </head>
