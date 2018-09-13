@@ -584,7 +584,7 @@ button {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
   }
-  .cube.anim {
+  .cube._1.anim, .cube._2.anim, .cube._3.anim, .cube._4.anim {
 	transition: transform 30000ms linear 0s;
   }
   .cube._1 {
