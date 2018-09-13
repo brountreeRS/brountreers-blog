@@ -6,114 +6,65 @@ navtitle: About
 tags:
   - nav
 ---
+
 <section class="strips">
-
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Lorem">Awesome</h1>
-
 <div class="strip__inner-text">
-
 <h2>Ettrics</h2>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-
 <p>[ twitter](https://twitter.com/pixelarchitect)</p>
-
 </div>
-
 </div>
-
 </article>
 
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Ipsum">Words</h1>
-
 <div class="strip__inner-text">
-
 <h2>Ettrics</h2>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-
 <p>[ twitter](https://twitter.com/pixelarchitect)</p>
-
 </div>
-
 </div>
-
 </article>
 
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Dolor">Go</h1>
-
 <div class="strip__inner-text">
-
 <h2>Ettrics</h2>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-
 <p>[ twitter](https://twitter.com/pixelarchitect)</p>
-
 </div>
-
 </div>
-
 </article>
 
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Sit">Inside</h1>
-
 <div class="strip__inner-text">
-
 <h2>Ettrics</h2>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-
 <p>[ twitter](https://twitter.com/pixelarchitect)</p>
-
 </div>
-
 </div>
-
 </article>
 
 <article class="strips__strip">
-
 <div class="strip__content">
-
 <h1 class="strip__title" data-name="Amet">Here</h1>
-
 <div class="strip__inner-text">
-
 <h2>Ettrics</h2>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
-
-<p>[twitter](https://twitter.com/pixelarchitect)</p>
-
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
 </div>
-
 </div>
-
 </article>
 
-<i class="fa fa-close strip__close">close</i>
-
+<p class="fa fa-close strip__close">close</p>
 </section>
-
-
-
 
 
 # MY OBJECTIVES
