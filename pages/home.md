@@ -42,6 +42,6 @@ tags:
 
 <p>Highly skilled and experienced front end and API layer engineer with a proven track record of building and launching new products as well as cleaning up and scaling existing products.</p>
 
-<a href="pdf/Brian%20Rountree%20_%20LinkedIn.pdf" class="btn fa-download download-btn">Printable Resume</a>
+
 
 </section>
