@@ -6,6 +6,7 @@ navtitle: About
 tags:
   - nav
 ---
+
 <section class="strips">
 <article class="strips__strip">
 <div class="strip__content">
@@ -47,7 +48,7 @@ Hiring, mentoring, and developing individual contributors and the next generatio
 ## LANGUAGES
 
 * HTML
-* CSS 
+* CSS
 * Javascript
 * Python
 * PHP
@@ -66,7 +67,7 @@ Hiring, mentoring, and developing individual contributors and the next generatio
 ## INTERESTS
 
 * Community Service
-* Molecular Gastronomy 
+* Molecular Gastronomy
 * Mentoring New Managers
 * Generative Art
 * Open Source Software Development

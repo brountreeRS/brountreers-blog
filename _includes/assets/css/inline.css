@@ -589,30 +589,27 @@ button {
   }
   .cube._1 {
 	left: -80vw;
-	-webkit-transform: rotate(0deg) translate3d(0px, 0px, -250px);
-	transform: rotate(0deg) translate3d(0px, 0px, -250px);
+	-webkit-transform: rotate(70deg) translate3d(0px, 0px, -250px);
+	transform: rotate(70deg) translate3d(0px, 0px, -250px);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	transition: transform 30000ms linear 0s;
   }
 
   
   .cube._2 {
 	left: -20vw;
-	-webkit-transform: rotate(0deg) translate3d(0px, 0px, 200px);
-	transform: rotate(0deg) translate3d(0px, 0px, 200px);
+	-webkit-transform: rotate(90deg) translate3d(0px, 0px, 200px);
+	transform: rotate(90deg) translate3d(0px, 0px, 200px);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	transition: transform 30000ms linear 0s;
   }
   
   .cube._3 {
 	left: 20vw;
-	-webkit-transform: rotate(0deg) translate3d(0px, 0px, -300px);
-	transform: rotate(0deg) translate3d(0px, 0px, -300px);
+	-webkit-transform: rotate(-90deg) translate3d(0px, 0px, -300px);
+	transform: rotate(-90deg) translate3d(0px, 0px, -300px);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	transition: transform 30000ms linear 0s;
   }
   
   .cube._4 {
@@ -621,7 +618,6 @@ button {
 	transform: rotate(0deg) translate3d(0px, 0px, 100px);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	transition: transform 30000ms linear 0s;
   }
   
   .cube-face {
