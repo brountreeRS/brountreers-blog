@@ -1,11 +1,3 @@
----
-title: About us
-date: 2017-01-01T00:00:00.000Z
-permalink: /about/index.html
-navtitle: About
-tags:
-  - nav
----
 <section class="strips">
 
 <article class="strips__strip">
@@ -22,7 +14,7 @@ Leading teams that drive impactful top level objectives forward.
 
 Hiring, mentoring, and developing individual contributors and the next generation of software development managers.
 
-<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+<p>[twitter](https://twitter.com/pixelarchitect)</p>
 
 </div>
 
@@ -133,3 +125,12 @@ SKILLS
 <i class="fa fa-close strip__close">close</i>
 
 </section>
+
+---
+title: About us
+date: 2017-01-01T00:00:00.000Z
+permalink: /about/index.html
+navtitle: About
+tags:
+  - nav
+---
