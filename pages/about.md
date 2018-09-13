@@ -1,12 +1,120 @@
 ---
 title: About us
+date: 2017-01-01T00:00:00.000Z
+permalink: /about/index.html
+navtitle: About
 tags:
   - nav
-navtitle: About
-section: about
-date: 2017-01-01
-permalink: /about/index.html
 ---
+<section class="strips">
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Lorem">Awesome</h1>
+
+<div class="strip__inner-text">
+
+<h2>Ettrics</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Ipsum">Words</h1>
+
+<div class="strip__inner-text">
+
+<h2>Ettrics</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Dolor">Go</h1>
+
+<div class="strip__inner-text">
+
+<h2>Ettrics</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Sit">Inside</h1>
+
+<div class="strip__inner-text">
+
+<h2>Ettrics</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+
+<p>[ twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<article class="strips__strip">
+
+<div class="strip__content">
+
+<h1 class="strip__title" data-name="Amet">Here</h1>
+
+<div class="strip__inner-text">
+
+<h2>Ettrics</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sapiente deserunt consectetur, quod reiciendis corrupti quo ea aliquid! Repellendus numquam quo, voluptate. Suscipit soluta omnis quibusdam facilis, illo voluptates odit!</p>
+
+<p>[twitter](https://twitter.com/pixelarchitect)</p>
+
+</div>
+
+</div>
+
+</article>
+
+<i class="fa fa-close strip__close">close</i>
+
+</section>
+
+
+
+
 
 # MY OBJECTIVES
 
@@ -39,7 +147,7 @@ Hiring, mentoring, and developing individual contributors and the next generatio
 * Mentoring New Managers
 * Generative Art
 * Open Source Software Development
-* *MK1 Sciroccos
+* \*MK1 Sciroccos
 * Vector Illustrations
 * Motion Design
 * Mixology
