@@ -185,3 +185,7 @@ button {
 		font-size: 1.1rem;
 	}
 }
+
+.profile-pic {
+	max-width:250px;
+}
