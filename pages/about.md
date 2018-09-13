@@ -1,3 +1,11 @@
+---
+title: About us
+date: 2017-01-01T00:00:00.000Z
+permalink: /about/index.html
+navtitle: About
+tags:
+  - nav
+---
 <section class="strips">
 
 <article class="strips__strip">
@@ -125,12 +133,3 @@ SKILLS
 <i class="fa fa-close strip__close">close</i>
 
 </section>
-
----
-title: About us
-date: 2017-01-01T00:00:00.000Z
-permalink: /about/index.html
-navtitle: About
-tags:
-  - nav
----
