@@ -52,6 +52,15 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+    // only content in the `portfolio/` directory
+    eleventyConfig.addCollection("portfolio", function(collection) {
+      return collection.getAllSorted().filter(function(item) {
+        return item.inputPath.match(/^\.\/portfolio\//) !== null;
+      });
+    });
+
+
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
